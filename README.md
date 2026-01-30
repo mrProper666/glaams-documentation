@@ -1,213 +1,234 @@
-# Инструкции за работа с проекта GLAAMS
+# GLAAMS Project Instructions
 
-Този документ описва инструкциите за работа с проекта GLAAMS, включващи добавяне на специалисти, услуги, конфигурации и други административни задачи. Документът покрива целия процес от настройката в cal.com до създаването на записи в GLAAMS CMS.
-
----
-
-## 1. Добавяне на специалист в cal.com (Админ)
-
-**Извършва се от:** Администратор
-
-Администраторът добавя специалиста в cal.com в тийм **glaams** като **MEMBER**.
+This document describes the instructions for working with the GLAAMS project, including adding specialists, services, configurations, and other administrative tasks. It covers the full process from cal.com setup to creating records in GLAAMS CMS.
 
 ---
 
-## 2. Регистрация на специалист в cal.com (Специалист)
+## 1. Adding a Specialist in cal.com (Admin)
 
-**Извършва се от:** Специалист
+**Performed by:** Administrator
 
-Специалистът се регистрира в cal.com чрез автоматично изпратения имейл линк.
+The administrator adds the specialist to cal.com in the **glaams** team as **MEMBER**.
 
----
+### Screenshots:
 
-## 3. Настройка на профил в cal.com (Специалист)
+![Settings](images/1-settings.png)
 
-**Извършва се от:** Специалист
+![Add member](images/2-add-member.png)
 
-Специалистът настройва необходимите полета в своя профил:
-
-- **Име** (Name)
-- **Имейл адрес** (Email)
-- **Език** (Language)
-- **Timezone** (Часови пояс)
-- **Time format** (Формат на времето)
-- **Start of week** (Начало на седмицата)
-- **Google календар** - избира се за синхронизация
+![Invite](images/3-invite.png)
 
 ---
 
-## 4. Създаване на Event Types в cal.com (Специалист)
+## 2. Specialist Registration in cal.com (Specialist)
 
-**Извършва се от:** Специалист
+**Performed by:** Specialist
 
-Специалистът добавя собствени Event Types (типове събития):
-
-### Стъпки:
-
-1. **Създаване на нов Event Type:**
-   - Добавя заглавие (Title)
-   - Добавя описание (Description)
-   - Задава продължителност (Duration)
-
-2. **Настройка на локация:**
-   - **Задължително** се избира "**In Person (Attendee Address)**"
-   - Това означава, че услугата се извършва на адреса на клиента
-
-3. **Запазване на настройките**
+The specialist registers in cal.com via the automatically sent email link.
 
 ---
 
-## 5. Задаване на лимити в cal.com (Специалист)
+## 3. Profile Setup in cal.com (Specialist)
 
-**Извършва се от:** Специалист
+**Performed by:** Specialist
 
-Специалистът задава следните лимити:
+The specialist configures the required fields in their profile:
 
-- **Буферно време преди събитието** (Buffer time before event)
-- **Буферно време след събитието** (Buffer time after event)
-- **Time-slot интервал** (Time-slot interval) - интервалите за избор на време, които ще се показват в страницата с услугите на специалиста
+- **Name**
+- **Email**
+- **Language**
+- **Timezone**
+- **Time format**
+- **Start of week**
+- **Google calendar** – selected for synchronization
+- **Availability** – set the days of the week and time ranges when the specialist will offer their services. This information appears on the specialist’s page as “Working hours” and is general in nature. Absences, holidays, personal commitments, etc. can be added later via Google calendar, so the specialist controls when they are actually available.
+
+### Screenshots:
+
+![Profile](images/4-profile.png)
+
+![General settings](images/5-general.png)
+
+![Availability](images/6-availability.png)
 
 ---
 
-## 6. Добавяне на специалист в GLAAMS (Админ)
+## 4. Creating Event Types in cal.com (Specialist)
 
-**Извършва се от:** Администратор
+**Performed by:** Specialist
 
-### Стъпки:
+The specialist adds their own Event Types:
 
-1. **Достъп до Content Manager:**
+### Steps:
+
+1. **Create a new Event Type:**
+   - Add title
+   - Add description
+   - Set duration
+
+2. **Location setup:**
+   - **Mandatory:** select “**In Person (Attendee Address)**”
+   - This means the service is performed at the client’s address
+
+3. **Save settings**
+
+![Event Type settings](images/8-event-type-settings.png)
+
+---
+
+## 5. Setting Limits in cal.com (Specialist)
+
+**Performed by:** Specialist
+
+The specialist sets the following limits:
+
+- **Buffer time before event**
+- **Buffer time after event**
+- **Time-slot interval** – the time options shown on the specialist’s services page
+
+![Event Type limits](images/9-event-type-limits.png)
+
+---
+
+## 6. Adding a Specialist in GLAAMS (Admin)
+
+**Performed by:** Administrator
+
+### Steps:
+
+1. **Access Content Manager:**
    - Content Manager → Specialist → Create new entry
 
-2. **Попълване на задължителни полета:**
-   - Попълват се всички задължителни полета
-   - По-голямата част от информацията трябва да бъде предоставена от специалиста или да бъде взета от профила му в cal.com
+2. **Fill required fields:**
+   - All required fields must be filled
+   - Most information should be provided by the specialist or taken from their cal.com profile
 
-3. **Важни полета:**
-   - **Languages** - използва се в листинга със специалисти за филтриране
-   - **Locations** - използва се в листинга със специалисти за филтриране
-   - **Services** - използва се в листинга със специалисти за филтриране
-     - ⚠️ **Важно:** Ако специалистът предлага услуга, която не е добавена, следва да се добави Service предварително
+3. **Important fields:**
+   - **Languages** – used for filtering in the specialist listing
+   - **Locations** – used for filtering in the specialist listing
+   - **Services** – used for filtering in the specialist listing
+     - ⚠️ **Important:** If the specialist offers a service that is not yet added, the Service must be added first
 
-4. **Поле "calUsername":**
-   - Попълва се с **"Username"** от профила на специалиста в cal.com
-   - Това поле е критично за свързването между GLAAMS и cal.com
+4. **“calUsername” field:**
+   - Fill with the **Username** from the specialist’s cal.com profile
+   - This field is critical for linking GLAAMS and cal.com
 
-5. **Поле "serviceConfigs":**
-   - ⚠️ **Не се редактира** - ще бъде попълнено автоматично, след като бъдат създадени конфигурациите за специалиста
+5. **“serviceConfigs” field:**
+   - ⚠️ **Do not edit** – it will be filled automatically after the specialist’s configurations are created
 
-6. **Запазване:**
+6. **Save:**
    - Save
    - Publish
 
 ---
 
-## 7. Създаване на конфигурации за специалист (Админ)
+## 7. Creating Specialist Configurations (Admin)
 
-**Извършва се от:** Администратор
+**Performed by:** Administrator
 
-### Стъпки:
+### Steps:
 
-1. **Достъп до Content Manager:**
+1. **Access Content Manager:**
    - Content Manager → Service Specialist Config → Create new entry
 
-2. **Избор на специалист и услуга:**
-   - Избира се специалист (вече създадения от предната точка)
-   - Избира се услуга
+2. **Select specialist and service:**
+   - Select the specialist (already created in the previous step)
+   - Select the service
 
-3. **Попълване на "Cal Event Type Id":**
-   - ⚠️ **Критично важно поле**
-   - Попълва се със стойност, която се взима от cal.com
-   - Това е ID-то на Event Type, което може да се копира от URL адреса на страницата:
+3. **Fill “Cal Event Type Id”:**
+   - ⚠️ **Critical field**
+   - Fill with the value taken from cal.com
+   - This is the Event Type ID, which can be copied from the page URL:
      ```
      app.cal.com/event-types/XXXXXXX?tabName=setup
      ```
-     - Числото, отбелязано с `XXXXXXX` в примера, е ID-то на Event Type
-   - Това ID свързва конфигурацията в GLAAMS с Event Type в cal.com
+     - The number marked as `XXXXXXX` in the example is the Event Type ID
+   - This ID links the GLAAMS configuration to the Event Type in cal.com
 
-4. **Попълване на останалите полета:**
-   - **Продължителност** (Duration) - може да се вземе от cal.com
-   - **Заглавие** (Title) - може да се вземе от cal.com
-   - **Описание** (Description) - може да се вземе от cal.com
-   - **Цена** (Price) - **задава се тук**, не се взима от cal.com
+4. **Fill remaining fields:**
+   - **Duration** – can be taken from cal.com
+   - **Title** – can be taken from cal.com
+   - **Description** – can be taken from cal.com
+   - **Price** – **set here**, not taken from cal.com
 
-5. **Снимка:**
-   - Ако не се добави снимка, ще се използва тази на услугата, към която е свързана конфигурацията
+5. **Image:**
+   - If no image is added, the one from the linked service will be used
 
-6. **Запазване:**
+6. **Save:**
    - Save
    - Publish
 
 ---
 
-## 8. Добавяне на главна услуга (Админ)
+## 8. Adding a Main Service (Admin)
 
-**Извършва се от:** Администратор
+**Performed by:** Administrator
 
-### Описание:
+### Description:
 
-Главните услуги излизат в:
-- Секциите "Treatments" в сайта
-- Полето "All treatments" на филтъра
+Main services appear in:
+- The “Treatments” sections on the site
+- The “All treatments” filter field
 
-Тези позиции са предвидени да имат собствени информативни страници.
+These are intended to have their own informational pages.
 
-### Полета за попълване:
+### Fields to fill:
 
-- **Page title** - визуализира се в клиентската част на услугата
-- **Short description** - визуализира се в клиентската част на услугата
-- **How It Works** (секция) - визуализира се в клиентската част на услугата
-- **FAQ** (секция) - визуализира се в клиентската част на услугата
-- **Benefits** (секция) - визуализира се в клиентската част на услугата
-- **Sub-services** - избират се (възможно е да се изберат повече от една опция)
+- **Page title** – displayed on the service’s frontend
+- **Short description** – displayed on the service’s frontend
+- **How It Works** (section) – displayed on the service’s frontend
+- **FAQ** (section) – displayed on the service’s frontend
+- **Benefits** (section) – displayed on the service’s frontend
+- **Sub-services** – select one or more options
 
-### Полета, които не се редактират:
+### Fields that must not be edited:
 
-- **specialists** - не се редактира
-- **specialistConfigs** - не се редактира
+- **specialists** – do not edit
+- **specialistConfigs** – do not edit
 
 ### Sub Service:
 
-Sub Service се създава по подобие на услуга, с тази разлика, че:
-- Подуслугите **нямат страници**
-- Те се добавят, за да се линкнат към услуга
+Sub Service is created similarly to a service, with the difference that:
+- Sub-services **do not have pages**
+- They are added to link to a main service
 
 ---
 
-## 9. Добавяне на CMS User за специалист (Админ)
+## 9. Adding CMS User for Specialist (Admin)
 
-**Извършва се от:** Администратор
+**Performed by:** Administrator
 
-### Цел:
+### Purpose:
 
-Създава се потребител в Strapi, който да бъде линкнат към специалист. По този начин специалистът ще може да:
-- Влиза в системата на GLAAMS
-- Преглежда статистика със своите буквания
-- Редактира информацията си
-- Сменя паролата си
-- Добавя снимки за галерия
+A user is created in Strapi and linked to the specialist. This allows the specialist to:
+- Log into the GLAAMS system
+- View statistics for their bookings
+- Edit their information
+- Change their password
+- Add gallery images
 
-### Стъпки:
+### Steps:
 
-1. **Достъп до Content Manager:**
+1. **Access Content Manager:**
    - Content Manager → User → Create new entry
 
-2. **Попълване на полета:**
-   - **username** - малкото име на специалиста
-   - **email** - имейлът, с който е регистриран специалистът в cal.com
-   - **password** - парола за достъп
-   - **confirmed** - `true`
-   - **role** - `Authenticated`
-   - **specialist** - от падащия списък се избира създаденият от точка 6 специалист
+2. **Fill fields:**
+   - **username** – the specialist’s username
+   - **email** – the email used to register the specialist in cal.com
+   - **password** – access password
+   - **confirmed** – `true`
+   - **role** – `Authenticated`
+   - **specialist** – select the specialist created in step 6 from the dropdown
 
-3. **Запазване:**
+3. **Save:**
    - Save
    - Publish
 
 ---
 
-## Важни бележки
+## Important notes
 
-- Всички стъпки трябва да се извършват в посочения ред
-- Полето "Cal Event Type Id" е критично за правилното функциониране на системата
-- Услугите трябва да бъдат създадени преди добавянето на специалист, ако специалистът предлага услуга, която не съществува
-- След създаването на конфигурациите, полето "serviceConfigs" в профила на специалиста се попълва автоматично
+- All steps must be performed in the given order
+- The “Cal Event Type Id” field is critical for the system to work correctly
+- Services must be created before adding a specialist if the specialist offers a service that does not exist yet
+- After configurations are created, the “serviceConfigs” field in the specialist’s profile is filled automatically
