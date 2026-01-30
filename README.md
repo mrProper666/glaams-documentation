@@ -12,7 +12,7 @@ The administrator adds the specialist to cal.com in the **glaams** team as **MEM
 
 ### Screenshots:
 
-![Settings](images/1-settings.png)
+![Settings](images/1-settings-1.png)
 
 ![Add member](images/2-add-member.png)
 

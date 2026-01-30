@@ -12,7 +12,7 @@ El administrador añade al especialista en cal.com en el equipo **glaams** como 
 
 ### Capturas de pantalla:
 
-![Configuración](images/1-settings.png)
+![Configuración](images/1-settings-1.png)
 
 ![Añadir miembro](images/2-add-member.png)
 

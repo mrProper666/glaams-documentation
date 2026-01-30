@@ -12,7 +12,7 @@
 
 ### Скрийншоти:
 
-![Настройки](images/1-settings.png)
+![Настройки](images/1-settings-1.png)
 
 ![Добавяне на член](images/2-add-member.png)
 
